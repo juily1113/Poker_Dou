@@ -1,0 +1,153 @@
+.body {
+	margin: 0;
+	padding: 0;
+
+}
+
+.content_poker {
+	width: 100vw;
+	height: 100vh;
+	position: absolute;
+	top: 0;
+	opacity: 0;
+	z-index: -1;
+	overflow: hidden;
+}
+
+.airplane {
+	width: 200px;
+	height: 120px;
+	background: url(../img/airplane.png) no-repeat;
+	background-size: 100%;
+	position: absolute;
+	right: -170px;
+	top:200px;
+    
+}
+
+.feiji {
+	width: 200px;
+	height: 120px;
+	background: url(../img/飞机.png) no-repeat;
+	background-size: 100%;
+	position: absolute;
+	right: -180px;
+}
+
+.rocket {
+	width: 250px;
+	height: 350px;
+	background: url(../img/rocket.png) no-repeat;
+	background-size: 100%;
+	position: absolute;
+	left: 45%;
+	top: 300px;
+	opacity: 0;
+}
+
+.bomb {
+	width: 350px;
+	height: 450px;
+	background: url(../img/bomb1.png) no-repeat;
+	background-size: 100%;
+	position: relative;
+	left: 45%;
+	top:15%;
+	opacity: 0;
+}
+
+.bomb1 {
+	width: 100px;
+	height: 100px;
+	background: url(../img/bomb.png) no-repeat;
+	background-size: 100%;
+	position: absolute;
+	top: 12.5%;
+	left: 51%;
+	/* top:100px;
+			left: -50px; */
+	opacity: 0;
+}
+
+.fire {
+	width: 150px;
+	height: 150px;
+	background: url(../img/fire.png) no-repeat;
+	background-size: 100%;
+	position: absolute;
+	top: 42.5%;
+	left: 650px;
+	opacity: 0;
+}
+.shunzi{
+	width: 300px;
+	height: 600px;
+	background: url(../img/shunzi.png) no-repeat;
+	background-size: 100%;
+	position: absolute;
+	top:-40%;
+	left:45%;
+	opacity: 0;
+}
+@keyframes airplane_run {
+	0% {
+
+		right: -150px;
+	}
+
+	40%,
+	60% {
+		right: 45%;
+	}
+
+	100% {
+		right: 110%;
+	}
+}
+
+@keyframes rocket_run {
+	0% {
+
+		top: 300px;
+	}
+
+	30% {
+		opacity: 1;
+	}
+
+	100% {
+
+		top: -500px;
+	}
+}
+
+@keyframes bomb_run {
+	0% {
+
+		top: 12.5%;
+		left: 51%;
+		opacity: 0;
+	}
+
+	100% {
+		top: 44.5%;
+		left: 670px;
+		opacity: 1;
+	}
+}
+@keyframes shunzi_run {
+	0% {
+
+		top:-40%;
+		left:45%;
+		opacity: 0;
+	}
+    30%{
+		opacity: 1;
+	}
+	100% {
+
+		top: 20%;
+		left:20%;	
+	}
+}

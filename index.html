@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>个人斗地主</title>
+		<link rel="stylesheet" href="./css/index.css">
+		<link rel="stylesheet" href="css/startpage.css">
+		<link rel="stylesheet" href="css/account.css">
+		<link rel="stylesheet" href="css/texiao.css">
+		<script src="./js/jquery-1.11.1.min.js"></script>
+		<script src="./js/shuffle_deal.js"></script>
+		<script src="./js/poker-data.js"></script>
+		<script src="./js/outpokerRule.js"></script>
+		<script type="text/javascript" src="js/startpage.js"></script>
+		<script src="./js/hintpoker.js"></script>
+	</head>
+
+	<body>
+
+		<!-- 游戏界面 -->
+		<section class="content">
+			<div class="install">
+				<audio id="chat0" src="chat/你们会死得很干脆的.mp3"></audio>
+				<audio id="chat1" src="chat/今天是我的幸运日.mp3"></audio>
+				<audio id="chat2" src="chat/你们干嘛不直接缴械投降呢.mp3"></audio>
+				<audio id="chat3" src="chat/你是没有机会赢我的.mp3"></audio>
+				<audio id="chat4" src="chat/出牌吧.mp3"></audio>
+				<audio id="chat5" src="chat/快点快点快点.mp3"></audio>
+				<audio id="chat6" src="chat/要赶快.mp3"></audio>
+				<audio id="chat7" src="chat/靠的是手气.mp3"></audio>
+				<audio id="chat8" src="chat/注意战场形势！.mp3"></audio>
+				<div class="novoice">
+			
+				</div>
+				<div class="voice">
+			
+				</div>
+				<div class="chat">
+					<ul class="chatbox">
+						<li>你们会死得很干脆的</li>
+						<li>今天是我的幸运日</li>
+						<li>你们干嘛不直接缴械投降呢</li>
+						<li>你是没有机会赢我的</li>
+						<li>出牌吧</li>
+						<li>快点快点快点</li>
+						<li>要赶快</li>
+						<li>靠的是手气</li>
+						<li>注意战场形势</li>
+					</ul>
+				</div>
+				<div class="ratio">
+			
+				</div>
+			</div>
+			<div class="yingxiao" style="position: absolute;">
+				<audio id="bgmusic" loop="loop" preload="auto" src="./audio/Exciting.ogg">
+				</audio>
+				<audio id="qiangdizhu" src="./audio/抢地主0.wav"></audio>
+				<audio id="qiangdizhu0" src="./audio/抢地主0.wav"></audio>
+				<audio id="qiangdizhu1" src="./audio/抢地主1.wav"></audio>
+				<audio id="qiangdizhu2" src="./audio/抢地主2.wav"></audio>
+				<audio id="jiaodizhu" src="./audio/叫地主.wav"></audio>
+				<audio id="buqiang" src="./audio/不抢.wav"></audio>
+				<audio id="bujiao" src="./audio/不叫.wav"></audio>
+				<audio id="buyao1" src="./audio/buyao1.wav"></audio>
+				<audio id="buyao2" src="./audio/buyao2.wav"></audio>
+				<audio id="buyao3" src="./audio/buyao3.wav"></audio>
+				<audio id="chupai" src="./audio/出牌声.ogg"></audio>
+				<audio id="single1" src="./audio/1.wav"></audio>
+				<audio id="single2" src="./audio/2.wav"></audio>
+				<audio id="single3" src="./audio/3.wav"></audio>
+				<audio id="single4" src="./audio/4.wav"></audio>
+				<audio id="single5" src="./audio/5.wav"></audio>
+				<audio id="single6" src="./audio/6.wav"></audio>
+				<audio id="single7" src="./audio/7.wav"></audio>
+				<audio id="single8" src="./audio/8.wav"></audio>
+				<audio id="single9" src="./audio/9.wav"></audio>
+				<audio id="single10" src="./audio/10.wav"></audio>
+				<audio id="single11" src="./audio/11.wav"></audio>
+				<audio id="single12" src="./audio/12.wav"></audio>
+				<audio id="single13" src="./audio/13.wav"></audio>
+				<audio id="single14" src="./audio/14.wav"></audio>
+				<audio id="single15" src="./audio/15.wav"></audio>
+				<audio id="dui1" src="./audio/dui1.wav"></audio>
+				<audio id="dui2" src="./audio/dui2.wav"></audio>
+				<audio id="dui3" src="./audio/dui3.wav"></audio>
+				<audio id="dui4" src="./audio/dui4.wav"></audio>
+				<audio id="dui5" src="./audio/dui5.wav"></audio>
+				<audio id="dui6" src="./audio/dui6.wav"></audio>
+				<audio id="dui7" src="./audio/dui7.wav"></audio>
+				<audio id="dui8" src="./audio/dui8.wav"></audio>
+				<audio id="dui9" src="./audio/dui9.wav"></audio>
+				<audio id="dui10" src="./audio/dui10.wav"></audio>
+				<audio id="dui11" src="./audio/dui11.wav"></audio>
+				<audio id="dui12" src="./audio/dui12.wav"></audio>
+				<audio id="dui13" src="./audio/dui13.wav"></audio>
+				<audio id="wangzha" src="audio/wangzha.wav"></audio>
+				<audio id="sange" src="./audio/sange.wav"></audio>
+				<audio id="zhadan" src="./audio/zhadan.wav"></audio>
+				<audio id="sandaiyi" src="./audio/sandaiyi.wav"></audio>
+				<audio id="shunzi" src="./audio/shunzi.wav"></audio>
+				<audio id="sandaier" src="./audio/sandaiyidui.wav"></audio>
+				<audio id="liandui" src="./audio/liandui.wav"></audio>
+				<audio id="sidaier" src="./audio/sidaier.wav"></audio>
+				<audio id="sidailiangdui" src="./audio/sidailiangdui.wav"></audio>
+				<audio id="feiji" src="./audio/feiji.wav"></audio>
+			</div>
+			<div class="box">
+				<div class="videobox">
+					<video muted src="./video/梦幻魔法阵.mp4" id="video" loop="loop"></video>
+				</div>
+				<div id="deckbox">
+					<ul id="deck"></ul>
+				</div>
+				<div class="player0">
+					<div class="user-info">
+						<div class="king"></div>
+						<div class="user-img"></div>
+						<div class="user-name">zhangwei</div>
+						<div class="user-gold"></div>
+					</div>
+
+					<button class="btn_get qiang">抢地主</button>
+					<button class="btn_get buqiang">不抢</button>
+					<div class="countdown">
+						<p></p>
+					</div>
+					<div class="tipbox">
+						<p></p>
+					</div>
+
+					<!-- <div class="countdown"></div>
+				<button class="playpoker-btn">出牌</button>
+				<button class="tips-btn">提示</button>
+				<button class="pass-btn">不出</button> -->
+					<div class="out-poker">
+						<button class="out">出牌</button>
+						<button class="no">不要</button>
+						<button class="hint" onclick="hint()">提示</button>
+						<div class="countdown bosscount">
+							<p></p>
+						</div>
+					</div>
+					<div class="desk-poker">
+						<ul></ul>
+					</div>
+					<ul id="#player0"></ul>
+				</div>
+				<div class="player1">
+					<div class="user-info">
+						<div class="king"></div>
+						<div class="user-img"></div>
+						<div class="user-name">zhuaoli</div>
+						<div class="user-gold"></div>
+					</div>
+
+					<button class="btn_get qiang">抢地主</button>
+					<button class="btn_get buqiang">不抢</button>
+					<div class="countdown bosscount">
+						<p></p>
+					</div>
+					<div class="tipbox">
+						<p>抢地主</p>
+					</div>
+					<div class="out-poker">
+						<button class="out">出牌</button>
+						<button class="no">不要</button>
+						<button class="hint" onclick="hint()">提示</button>
+						<div class="countdown">
+							<p></p>
+						</div>
+					</div>
+					<!-- <div class="countdown"></div> -->
+					<!-- <button class="playpoker-btn">出牌</button>
+				<button class="tips-btn">提示</button>
+                <button class="pass-btn">不出</button> -->
+					<div class="desk-poker">
+						<ul></ul>
+					</div>
+					<ul></ul>
+				</div>
+				<div class="player2">
+					<div class="user-info">
+						<div class="king"></div>
+						<div class="user-img"></div>
+						<div class="user-name">songbin</div>
+						<div class="user-gold"></div>
+					</div>
+
+					<button class="btn_get qiang">抢地主</button>
+					<button class="btn_get buqiang">不抢</button>
+					<div class="countdown bosscount">
+						<p></p>
+					</div>
+					<div class="tipbox">
+						<p>抢地主</p>
+					</div>
+
+					<div class="out-poker">
+						<button class="out">出牌</button>
+						<button class="no">不要</button>
+						<button class="hint" onclick="hint()">提示</button>
+						<div class="countdown">
+							<p></p>
+						</div>
+					</div>
+					<div class="desk-poker">
+						<ul></ul>
+					</div>
+					<!-- <div class="countdown"></div> -->
+					<!-- <button class="playpoker-btn">出牌</button>
+			   <button class="tips-btn">提示</button>
+			   <button class="pass-btn">不出</button> -->
+					<ul></ul>
+				</div>
+			</div>
+			<!-- 特殊牌型特效 -->
+			<div class="content_poker">
+				<audio id="music" src="video/airplane.mp3"></audio>
+				<audio id="rmusic" src="video/rocket.mp3"></audio>
+				<audio id="bmusic" src="video/bomb.mp3"></audio>
+				<div class="airplane">
+					<div class="feiji"></div>
+				</div>
+				<div class="rocket"></div>
+				<div class="bomb">
+				</div>
+				<div class="bomb1"></div>
+				<div class="fire"></div>
+				<div class="shunzi"></div>
+			</div>
+		</section>
+		<!-- 结算界面 -->
+		<div class="account_content">
+			<div class="account">
+				<div class="pic"></div>
+				<div class="user-info">
+					<div class="user-img"></div>
+					<div class="user-name">zhuaoli</div>
+				</div>
+				<button type="button">返回首页</button>
+				<button type="button">再来一局</button>
+				<table cellspacing="0">
+					<tr>
+						<th></th>
+						<th>账号名</th>
+						<th>倍数</th>
+						<th>欢乐豆</th>
+						<th>总豆</th>
+					</tr>
+					<tr>
+						<td style="width: 20%;"><img class="p_boss" src="img/boss1.png" /></td>
+						<td>zhangwei</td>
+						<td>16</td>
+						<td>0</td>
+						<td>0</td>
+					</tr>
+					<tr>
+						<td style="width: 20%;"><img class="p_farmer" src="img/farmer.png" /></td>
+						<td>zhuaoli</td>
+						<td>16</td>
+						<td>0</td>
+						<td>0</td>
+					</tr>
+					<tr>
+						<td style="width: 20%;"><img class="p_farmer" src="img/farmer.png" /></td>
+						<td>songbin</td>
+						<td>16</td>
+						<td>0</td>
+						<td>0</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</body>
+	<script src="./js/game.js"></script>
+</html>

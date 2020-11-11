@@ -1,0 +1,517 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	border: 0;
+	list-style: none;
+	text-decoration: none;
+}
+
+.content {
+	width: 100vw;
+	height: 100vh;
+	position: relative;
+	overflow: hidden;
+}
+
+.content .box {
+	width: 100vw;
+	height: 100vh;
+	position: relative;
+	margin: 0 auto;
+}
+
+.videobox {
+	width: 100vw;
+	height: 100vh;
+	margin: 0 auto;
+
+}
+
+#video {
+	width: 100vw;
+	height: 100vh;
+	object-fit: fill;
+}
+
+/*牌组*/
+#deckbox {
+	width: 100%;
+	height: 200px;
+	position: relative;
+	top: -700px;
+}
+
+#deck {
+	width: 130px;
+    height: 200px;
+    position: absolute;
+    top: 70px;
+    left: 695px;
+}
+
+.deck {
+	width: 130px;
+	height: 200px;
+	position: absolute;
+	left: 565px;
+	top: 0;
+}
+
+.poker {
+	width: 94px;
+	height: 122px;
+	background: url(../images/14.png) -60px 131.5px;
+	background-size: 220px 283.5px;
+	position: absolute;
+	z-index: 100;
+}
+
+.player1,
+.player2,
+.player0 {
+	width: 187px;
+	height: 190px;
+	margin: 20px auto 0px;
+	position: absolute;
+
+}
+
+.player1 li,
+.player2 li,
+.player0 li {
+	position: absolute;
+}
+
+.player0 {
+	top: 110px;
+	left: 153px;
+}
+
+
+.player1 {
+	top: 510px;
+	left: 600px;
+
+}
+
+.player2 {
+	top: 110px;
+	left: 1325px;
+
+}
+
+.content button {
+	width: 123px;
+	height: 39px;
+	font-size: 18px;
+	font-weight: 400;
+	background: url(../images/btn.png);
+	background-size: 123px 39px;
+	position: absolute;
+	display: none;
+	color: #fadc87;
+}
+
+.player0 button {
+	transform: rotate(90deg);
+}
+
+.player0 .qiang {
+	left: 50px;
+	top: 120px;
+}
+
+.player0 .buqiang {
+	left: 50px;
+	top: 270px;
+}
+
+.player0 .playpoker-btn {
+	left: 50px;
+	top: 100px;
+}
+
+.player0 .tips-btn {
+	left: 50px;
+	top: 240px;
+}
+
+.player0 .pass-btn {
+	left: 50px;
+	top: 380px;
+}
+
+.player2 button {
+	transform: rotate(-90deg);
+}
+
+.player2 .qiang {
+	left: -175px;
+	top: 120px;
+}
+
+.player2 .buqiang {
+	left: -175px;
+	top: 270px;
+}
+
+.player2 .playpoker-btn {
+	left: -175px;
+	top: 100px;
+}
+
+.player2 .tips-btn {
+	left: -175px;
+	top: 240px;
+}
+
+.player2 .pass-btn {
+	left: -175px;
+	top: 380px;
+}
+
+.player1 .qiang {
+	left: 95px;
+	top: -75px;
+}
+
+.player1 .buqiang {
+	left: 255px;
+	top: -75px;
+}
+
+.player1 .playpoker-btn {
+	top: -75px;
+	left: 25px;
+}
+
+.player1 .tips-btn {
+	top: -75px;
+	left: 165px;
+}
+
+.player1 .pass-btn {
+	top: -75px;
+	left: 310px;
+}
+
+
+.player0 .user-info {
+	width: 200px;
+	height: 120px;
+	background: url(../images/user-info.png) rgba(255, 255, 255, 0.5);
+	background-size: 200px 120px;
+	position: absolute;
+	top: -130px;
+	left: -90px;
+}
+
+.player1 .user-info {
+	width: 200px;
+	height: 120px;
+	background: url(../images/user-info.png) rgba(255, 255, 255, 0.5);
+	background-size: 200px 120px;
+	position: absolute;
+	top: 7px;
+	left: -340px;
+}
+
+.player2 .user-info {
+	width: 200px;
+	height: 120px;
+	background: url(../images/user-info.png) rgba(255, 255, 255, 0.5);
+	background-size: 200px 120px;
+	position: absolute;
+	top: -130px;
+	left: -99px;
+}
+
+.user-img {
+	width: 60px;
+	height: 60px;
+	margin-top: 37px;
+	margin-left: 18px;
+	border-radius: 50%;
+	float: left;
+	display: block;
+	z-index: 100;
+}
+
+.king {
+	width: 95px;
+	height: 110px;
+	float: left;
+	position: absolute;
+	background: url(../images/King.png) no-repeat;
+	background-size: 95px 110px;
+	display: none;
+}
+
+.player1 .user-img {
+	background: url(../images/user1.jpg) no-repeat;
+	background-size: 60px 60px;
+}
+
+.player0 .user-img {
+	background: url(../images/user0.jpg) no-repeat;
+	background-size: 60px 60px;
+}
+
+.player2 .user-img {
+	background: url(../images/user2.jpg) no-repeat;
+	background-size: 60px 60px;
+}
+
+.content .user-name {
+	float: left;
+	width: 90p;
+	height: 30px;
+	margin-top: 32px;
+	margin-left: 20px;
+	text-align: center;
+	line-height: 30px;
+
+}
+
+.user-gold {
+	float: left;
+	width: 90px;
+	height: 30px;
+	margin-top: 10px;
+	text-align: center;
+	line-height: 30px;
+}
+
+.countdown {
+	width: 100px;
+	height: 120px;
+	position: absolute;
+	background: url(../images/countdown.png);
+	background-size: 100px 120px;
+	display: none;
+}
+
+.player1 .countdown {
+	top: -140px;
+	left: -100px;
+}
+
+.player0 .countdown {
+	top: 130px;
+	left: 150px;
+}
+
+.player2 .countdown {
+	top: 130px;
+	right: 350px;
+}
+
+.add_transform {
+	transform: rotateZ(6deg);
+	transition: all 0.5s ease-in-out;
+}
+
+.countdown p {
+	width: 30px;
+	height: 30px;
+	display: block;
+	margin-top: 55px;
+	margin-left: 35px;
+	text-align: center;
+	line-height: 30px;
+	font-size: 21px;
+	font-weight: 800;
+}
+
+.tipbox {
+	width: 250px;
+	height: 80px;
+	position: absolute;
+	display: none;
+}
+
+.player1 .tipbox {
+	top: -120px;
+	left: 60px;
+}
+
+.player0 .tipbox {
+	top: 150px;
+	left: 100px;
+}
+
+.player2 .tipbox {
+	top: 150px;
+	left: -350px;
+}
+
+.tipbox p {
+
+	width: 120px;
+	height: 30px;
+	display: block;
+	margin: 25px auto;
+	line-height: 30px;
+	text-align: center;
+	font-size: 35px;
+	font-weight: 900;
+	font-family: "STHupo";
+	text-shadow: 5px 5px 5px black, 0px 0px 2px black;
+	color: white;
+}
+
+.add_transform {
+	transform: rotateZ(6deg);
+	transition: all 0.5s ease-in-out;
+}
+
+/* 出牌过牌按钮 */
+.player0 .out-poker .out{
+	left:50px;
+	top: 36px;
+}
+.player0 .out-poker .no{
+	left:50px;
+	top: 174px;
+}
+.player0 .out-poker .hint{
+	left:50px;
+	top: 312px;
+}
+
+.player1 .out-poker .out{
+	left:-2px;
+	top: -76px;
+}
+.player1 .out-poker .no{
+	left:193px;
+	top: -76px;
+}
+.player1 .out-poker .hint{
+	left:395px;
+	top: -76px;
+}
+	
+
+.player2 .out-poker .out{
+	left:-174px;
+	top: 196px;
+}
+.player2 .out-poker .no{
+	left:-174px;
+	top: 349px;
+}
+.player2 .out-poker .hint{
+	left:-174px;
+	top: 46px;
+}
+
+
+.player0 .on {
+	left: -18px;
+}
+
+.player1 .on {
+	top: -20px;
+}
+
+.player2 .on {
+	left: -60px;
+}
+
+.player0 .desk-poker {
+	width: 20vw;
+	height: 15vh;
+	position: absolute;
+	left: 11vw;
+	top: 35px;
+}
+
+.player1 .desk-poker {
+	width: 20vw;
+	height: 15vh;
+	position: absolute;
+	left: 5vw;
+	top: -27vh;
+}
+
+.player2 .desk-poker {
+	width: 20vw;
+	height: 15vh;
+	position: absolute;
+	left: -30vw;
+	top: 35px;
+}
+
+body {
+	position: relative;
+}
+
+.install {
+	width: 100%;
+	height: 50px;
+	position: absolute;
+	display: block;
+	background: rgba(105, 105, 105, 0.8);
+	bottom: 0px;
+	z-index: 100;
+}
+
+.install .voice {
+	width: 30px;
+	height: 30px;
+	float: left;
+	background: url(../images/voice.png) no-repeat;
+	background-size: 30px 30px;
+	margin: 10px;
+	display: none;
+}
+
+.install .novoice {
+	width: 30px;
+	height: 30px;
+	float: left;
+	background: url(../images/novoice.png) no-repeat;
+	background-size: 30px 30px;
+	margin: 10px;
+}
+
+.install .chat {
+	width: 30px;
+	height: 30px;
+	float: left;
+	background: url(../images/chat.png) no-repeat;
+	background-size: 30px 30px;
+	margin: 10px 10px 10px 50px;
+	position: relative;
+}
+
+.install .chat .chatbox {
+	width: 200px;
+	height: 285px;
+	display: none;
+	position: absolute;
+	animation: all .5s ease;
+	/* background: rgba(200,200,200,0.6); */
+	background: rgba(0, 0, 0, 0.6);
+	color: rgb(200, 200, 200);
+	top: -300px;
+	left: -60px;
+}
+
+.install .chat .chatbox li {
+	height: 20px;
+	width: 100%;
+	margin-top: 10px;
+	line-height: 20px;
+	text-align: center;
+	animation: all .5s ease;
+	cursor: Default;
+}
+
+.install .chat .chatbox li:hover {
+	background: rgba(100, 100, 100, 0.6);
+	color: rgb(255, 255, 255);
+	animation: all .5s ease;
+	cursor: Default;
+}

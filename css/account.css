@@ -1,0 +1,122 @@
+.body {
+	margin: 0;
+	padding: 0;
+}
+
+.account_content {
+	width: 100vw;
+	height: 100vh;
+	background: rgba(0, 0, 0, 0.7);
+	position: fixed;
+	z-index: 0;
+	top: 0;
+	left: 0;
+	display: none;
+	z-index: 1000;
+}
+
+.account {
+	width: 70%;
+	height: 60%;
+	/* background: rgba(172,113,83,0.4); */
+	background: linear-gradient(to right, rgba(172, 113, 83, 0.1) 0%, rgba(172, 113, 83, 0.9) 40%, rgba(172, 113, 83, 0.9) 50%, rgba(172, 113, 83, 0.9) 60%, rgba(172, 113, 83, 0.1) 100%);
+	margin: 0 auto;
+	margin-top: 10%;
+	position: relative;
+	
+}
+
+.account>div:first-child {
+	width: 400px;
+	height: 220px;
+	position: relative;
+	top: -25%;
+	left: 29.2%;
+	z-index: 100;
+}
+
+.pic {
+	background: url(../img/defeat.png) no-repeat;
+	background-size: 100%;
+}
+
+.pic_x {
+	background: url(../img/victory.png) no-repeat;
+	background-size: 100%;
+}
+.account button{
+	width: 100px;
+	height: 50px;
+	font-size: 18px;
+	color: white;
+	background: rgba(0,0,0,0.3);
+	border-radius: 5px;
+	border: 0px;
+	float: right;
+	display: block;
+	position: none;
+}
+.account button:first-of-type{
+	margin-top: -17%;
+	margin-right: 17%;
+}
+.account button:nth-of-type(2){
+	margin-top: -17%;
+	margin-right: 5%;
+}
+.account .user-info {
+	width: 240px;
+	height: 60px;
+	background: linear-gradient(to right, rgba(255, 255, 255, 0.1) 0%,
+		rgba(255, 255, 255, 0.4) 40%,
+		rgba(255, 255, 255, 0.4) 50%,
+		rgba(255, 255, 255, 0.4) 60%,
+		rgba(255, 255, 255, 0.1) 100%);
+	background-size: 200px 120px;
+	position: absolute;
+	top: 23%;
+	left: 38.8%;
+	z-index: 101;
+}
+
+.account_content .user-img {
+	width: 60px;
+	height: 60px;
+	/* margin-top: 20px; */
+	margin: 0 20px;
+	border-radius: 50%;
+	float: left;
+	background: url(../img/user.jpg) no-repeat;
+	background-size: 60px 60px;
+}
+
+.user-name {
+	float: left;
+	width: 90px;
+	height: 60px;
+	text-align: center;
+	line-height: 60px;
+}
+
+table {
+	width: 70%;
+	height: 60%;
+	position: absolute;
+	top: 40%;
+	left: 15%;
+	font-family: "YouYuan";
+	font-size: 20px;
+	z-index: 100;
+}
+
+table tr {
+	width: 100%;
+	height: 25%;
+	line-height: 25%;
+	border: 1px solid blue;
+	text-align: center;
+}
+
+tr img {
+	width: 50px;
+}
